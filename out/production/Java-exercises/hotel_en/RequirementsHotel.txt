@@ -1,0 +1,41 @@
+﻿REQ-1 After startup, the desired number of rooms has to be requested. This has to be an integer in the range of 1 to 18.
+
+REQ-2 Once the user has entered the desired number of hotel rooms, he shall be taken to the Main Menu. All rooms start out empty.
+
+REQ-3 In the main menu the user will get to see an overview of all rooms and any guests staying in each one (REQ-4).
+From here, the user can choose between three actions:
+	1. Register a new guest (REQ-5)
+	2. Deregister a current guest (REQ-7)
+	3. Stop (REQ-8)
+
+REQ-4 The overview of rooms shall show the following information:
+	If no guest is currently registered for this room: "<room number>: empty"
+	If a guest is registered for this room: "<room number>: <name> <gender> <age> <age status> <veg status>"
+	Where:
+		<room number> = "Room ", followed by the number of the room
+		<name> = name of the guest
+		<gender> = {"M" | "F"}
+		<age> = "age: ", followed by the age of the guest
+		<age status> = {"(toddler)" (for age below 5) | "(child)" (for age 5 to 17) | "(65+)" (for age 65 or greater) | "" (any other age)}
+		<veg status> = "(vegetarian)" if guest is vegetarian, nothing otherwise
+
+REQ-5 If there are empty rooms available, the user can register a new guest. The user shall then be requested to enter the following information:
+		- the name of the guest (can be an arbitrary string)
+		- the gender of the guest (either "M" or "F"; input shall be case insensitive)
+		- the age of the guest (A positive integer, less than 150)
+		- whether the guest is a vegetarian (either "Y" or "N"; input shall be case insensitive)
+		- the number of the room to register the guest for (an integer within the range of the existing room numbers, subject to REQ-6)
+	After succesfully completing a Register action, the user shall return to the Main Menu (REQ-3).
+	
+REQ-6 An existing guest registration cannot be overwritten by a new Register action.
+	In case a user picks a room that is already full during a Register action, the user shall be informed that this is not allowed. In that case, the
+	overview shall be shown again (REQ-4) and the user shall be requested to choose a different room number, subject to the same restrictions (see REQ-5)
+	If the user tries to perform a Register action while there are no free rooms, the Register action shall not be executed. The user shall then be informed
+	that it is impossible to register any more guests and the user shall return to the Main Menu (REQ-3).
+
+REQ-7 If the user deregisters a guest, he shall be requested to enter the number of the room of the guest he wants to deregister.
+	If the room with that number is already empty, the user shall be informed that the room is empty and return to the Main menu (REQ-3).
+	If there is a guest registered for the room, the registration shall be removed.
+	After completing a Deregister action, the user shall return to the Main Menu (REQ-3).
+
+REQ-8 If the user selects the Stop action from the Main Menu, the program shall be terminated.

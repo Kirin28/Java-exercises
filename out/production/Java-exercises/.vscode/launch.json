@@ -1,0 +1,105 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SubTest",
+            "request": "launch",
+            "mainClass": "SubTest",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "SubClass",
+            "request": "launch",
+            "mainClass": "SubClass",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "main",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "TestClass",
+            "request": "launch",
+            "mainClass": "TestClass",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ContinueDemo",
+            "request": "launch",
+            "mainClass": "ContinueDemo",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "CountChars",
+            "request": "launch",
+            "mainClass": "CountChars",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "Dog",
+            "request": "launch",
+            "mainClass": "Dog",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "MadLib",
+            "request": "launch",
+            "mainClass": "MadLib",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "Order",
+            "request": "launch",
+            "mainClass": "Order",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "PrintQuotes",
+            "request": "launch",
+            "mainClass": "PrintQuotes",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "SimpleMath",
+            "request": "launch",
+            "mainClass": "SimpleMath",
+            "projectName": "Java-exercises_8e4b704f"
+        },
+        {
+            "type": "java",
+            "name": "weirdLoop",
+            "request": "launch",
+            "mainClass": "weirdLoop",
+            "projectName": "Java-exercises_8e4b704f"
+        }
+    ]
+}
